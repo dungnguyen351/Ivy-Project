@@ -666,11 +666,15 @@ a {
     width: 30px;
 }
 .cart-content-left table span {
-    display: block;
+    display: flex;
     width: 20px;
     height: 20px;
     border: 1px solid #dddddd;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
 }
 .cart-content-left table td {
     padding: 20px 0;
