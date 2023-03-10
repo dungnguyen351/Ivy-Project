@@ -41,3 +41,38 @@ header {
     width: 80%;
     padding: 30px 0 0 12px;
 }
+.admin-content-right-cartegory_add input {
+    height: 30px;
+    width: 200px;
+    padding-left: 12px;
+    margin-top: 20px;
+
+}
+.admin-content-right-cartegory_add button {
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: brown;
+    border: none;
+    color: white; 
+    transition: all 0.3s ease;
+}
+.admin-content-right-cartegory_add button:hover {
+    background-color: transparent;
+    border: 1px solid brown;
+    color: brown;
+}
+/* --------------------Cartegorylist---------------------- */
+.admin-content-right-cartegory_list table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; 
+}
+.admin-content-right-cartegory_list table tr th,td {
+    border:  1px solid #dddddd;
+}
+table {
+    border-collapse: collapse;
+}
