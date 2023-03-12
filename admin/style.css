@@ -76,3 +76,36 @@ header {
 table {
     border-collapse: collapse;
 }
+/* ------------------------------Product---------------------------- */
+.admin-content-right-product_add input,select {
+    width: 200px;
+    height: 30px;
+    margin: 6px 0 12px;
+    display: block;
+    padding-left: 12px;
+    
+}
+.admin-content-right-product_add textarea {
+    height: 200px;
+    width: 500px;
+    display: block;
+    margin-bottom: 12px;
+    padding: 12px;
+
+}
+.admin-content-right-product_add button {
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: brown;
+    border: none;
+    color: white; 
+    transition: all 0.3s ease;
+}
+.admin-content-right-product_add button:hover {
+    background-color: transparent;
+    border: 1px solid brown;
+    color: brown;
+}
