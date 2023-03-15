@@ -77,6 +77,10 @@ table {
     border-collapse: collapse;
 }
 /* ------------------------------Product---------------------------- */
+.admin-content-right-product_add h1 {
+    margin-bottom: 20px;
+    
+}
 .admin-content-right-product_add input,select {
     width: 200px;
     height: 30px;

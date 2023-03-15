@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Danh mục sản phẩm</title>
-</head>
-<body>
-    <header>
-        <h1>TOP</h1>
-    </header>
-    <section class="admin-content">
-        <div class="admin-content-left">
-            <ul>
-                <li><a href="#">Danh mục</a>
-                    <ul>
-                        <li><a href="">Thêm Danh mục</a></li>
-                        <li><a href="">Danh sách Danh mục</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Loại sản phẩm</a>
-                    <ul>
-                        <li><a href="">Thêm Loại sản phẩm</a></li>
-                        <li><a href="">Danh  Loại sản phẩm</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Sản phẩm</a>
-                    <ul>
-                        <li><a href="">Thêm sản phẩm</a></li>
-                        <li><a href="">Danh sách sản phẩm</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<?php
+include "header.php";
+include "slider.php";
+
+?>
+
+
         <div class="admin-content-right">
             <div class="admin-content-right-product_add">
                 <h1>Thêm Sản phẩm</h1>
@@ -63,8 +34,6 @@
             </div>
         </div>
     </section>
+
 </body>
 </html>
-
-
-
