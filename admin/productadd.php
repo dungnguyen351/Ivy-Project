@@ -59,12 +59,26 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
 </body>
 
 
-        <script>
-            CKEDITOR.replace('editor1', {
-                filebrowserBrowserUrl: 'ckfinder/ckfinder.html',
-                filebrowserUploadUrl:  'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
-            });
+<script>
+    CKEDITOR.replace('editor1', {
+        filebrowserBrowserUrl: 'ckfinder/ckfinder.html',
+        filebrowserUploadUrl:  'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
+    });
 
-        </script>
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#cartegory_id').change(function(){
+            //alert($(this).val())
+            var x = $(this).val()
+            $.get("productadd_ajax.php",{$cartegory_id:x},function(data){
+                $("#brand_id").html(data);
+            })
+        })
+    })
+</script>
+
+
 
 </html>
