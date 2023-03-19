@@ -9,6 +9,8 @@ $product = new product;
 $show_product = $product ->show_product();
 ?>
 
+
+
 <div class="admin-content-right">
 <div class="admin-content-right-cartegory_list">
                 <h1>Danh sách sản phẩm</h1>
@@ -28,16 +30,24 @@ $show_product = $product ->show_product();
                     if($show_product){$i=0;
                         while($result = $show_product->fetch_assoc ()) {$i++;
                     ?>
+                    
                     <tr>
                         <td><?php echo $i ?></td>
                         <td><?php echo $result['product_id'] ?></td>
                         <td><?php echo $result['product_name'] ?></td>
-                        <td><?php echo $result['cartegory_id'] ?></td>
+                        <td><?php echo $result['cartegory_id' ] ?></td>
                         <td><?php echo $result['brand_id'] ?></td>
                         <td><?php echo $result['product_price'] ?></td>
                         <td><?php echo $result['product_desc'] ?></td>
                         <td><?php echo $result['product_img'] ?></td>
-                        <td><a href="productdedit.php?product_id=<?php echo $result ['product_id'] ?>">Sửa</a> | <a href="productdelete.php?product_id=<?php echo $result ['product_id'] ?>">Xóa</a></td>
+                        <td>
+                            <button>
+                                <a href="productedit.php?product_id=<?php echo $result ['product_id'] ?>">Sửa</a>
+                            </button>
+                             <button>
+                                <a href="productdelete.php?product_id=<?php echo $result ['product_id'] ?>">Xóa</a>
+                            </button>
+                        </td>
                     </tr>
                     <?php
                     }

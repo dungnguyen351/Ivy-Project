@@ -26,17 +26,23 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
 </style>
 <div class="admin-content-right">
             <div class="admin-content-right-cartegory_add">
-                <h1>Thêm Loại sản phẩm</h1> <br>
+                <h1>Sửa Loại sản phẩm</h1> <br>
                 <form action="" method="POST">
                     <select name="cartegory_id" id="">
                         <option value="#">--Chọn Danh mục--</option>
                         <?php 
                         $show_cartegory = $brand -> show_cartegory();
-                        if($show_cartegory){while($rusult = $show_cartegory -> fetch_assoc()){
-
-                        
+                        if($show_cartegory)
+                            {while($rusult = $show_cartegory -> fetch_assoc()){
                         ?>
-                        <option <?php if($resultA['cartegory_id']==$rusult['cartegory_id']){echo "SELECTED";}?> value="<?php echo $rusult ['cartegory_id'] ?>"><?php echo $rusult ['cartegory_name'] ?></option>
+
+                        <option 
+                            <?php
+                                if($resultA['cartegory_id']==$rusult['cartegory_id']){echo "SELECTED";}
+                            ?>
+                                value="<?php echo $rusult ['cartegory_id'] ?>"><?php echo $rusult ['cartegory_name'] ?>
+                        </option>
+                        
                         <?php 
                         }}
                         ?>

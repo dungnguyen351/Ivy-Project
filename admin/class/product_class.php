@@ -110,8 +110,15 @@ class product {
     }
 
     /*---------------------------Countinue here--------------------------*/ 
-    public function update_product($cartegory_id,$brand_name,$brand_id) {
-        $query = "UPDATE tbl_brand SET brand_name = '$brand_name',cartegory_id = '$cartegory_id' WHERE brand_id = '$brand_id' ";
+    public function update_product($product_id,$product_name,$cartegory_id,$brand_id,$product_price,$product_price_new,$product_desc) {
+        $query = "UPDATE tbl_product SET
+        product_name = '$product_name',
+        cartegory_id = '$cartegory_id',
+        brand_id= '$brand_id', 
+        product_price= '$product_price',
+        product_price_new = '$product_price_new',
+        product_desc = '$product_desc' 
+        WHERE product_id = '$product_id' ";
         $result = $this ->db->update($query);
         header('location:productlist.php');
         return $result;

@@ -29,7 +29,15 @@ $show_brand = $brand ->show_brand();
                         <td><?php echo $result['brand_id'] ?></td>
                         <td><?php echo $result['cartegory_name'] ?></td>
                         <td><?php echo $result['brand_name'] ?></td>
-                        <td><a href="brandedit.php?brand_id=<?php echo $result ['brand_id'] ?>">Sửa</a> | <a href="branddelete.php?brand_id=<?php echo $result ['brand_id'] ?>">Xóa</a></td>
+                        <td>
+                            <button>
+                                <a href="brandedit.php?brand_id=<?php echo $result ['brand_id'] ?>">Sửa</a> 
+                            </button>
+                          
+                            <button>
+                                <a href="branddelete.php?brand_id=<?php echo $result ['brand_id'] ?>">Xóa</a>
+                            </button>
+                        </td>
                     </tr>
                     <?php
                     }
