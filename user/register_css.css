@@ -1,0 +1,70 @@
+/* Thiết lập các thuộc tính chung cho toàn bộ trang web */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Căn giữa form trên trang */
+  .register-form {
+    width: 50%;
+    margin: auto;
+  }
+  
+  /* Thiết lập style cho tiêu đề form */
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Thiết lập style cho input và label */
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .form-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 300;
+    transition: border-color .3s ease-in-out;
+  }
+  
+  .form-label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Hiệu ứng khi hover vào input */
+  .form-field:hover, .form-field:focus {
+    outline: none;
+    border-color: #63ada9;
+  }
+  
+  /* Thiết lập style cho nút submit */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #63ada9;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4b8e8d;
+  }
+  

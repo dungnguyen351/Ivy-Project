@@ -1,0 +1,22 @@
+.success-icon-container {
+    display: none;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-rotate {
+    animation-name: rotate;
+    animation-duration: 1s;
+  }
+  
+  .success {
+    color: pink;
+  }
+  
