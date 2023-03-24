@@ -17,11 +17,19 @@
   if ($password != $confirm_password) {
     echo "Mật khẩu và xác nhận mật khẩu không khớp.";
   } else {
-    // Mã hóa mật khẩu trước khi lưu vào cơ sở dữ liệu
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $hashed_password = md5($password);
 
     // Thêm thông tin người dùng vào bảng "users"
     $sql = "INSERT INTO tb_user (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
+    
+
+
+    // Mã hóa mật khẩu trước khi lưu vào cơ sở dữ liệu
+    
+    //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    // Thêm thông tin người dùng vào bảng "users"
+    //$sql = "INSERT INTO tb_user (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
     
     if (mysqli_query($conn, $sql)) {
       echo "Đăng ký tài khoản thành công.";

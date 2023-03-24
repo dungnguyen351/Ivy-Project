@@ -34,7 +34,15 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
                     </select>
                     <label for="" placeholder="">Chọn Loại sản phẩm<span style="color: red;" >*</span></label>
                     <select name="brand_id" id="brand_id">
-                        <option value="#">--Chọn--</option>
+                    <option value="#">--Chọn--</option>
+                    <?php 
+                        $show_brand = $product -> show_brand();
+                        if($show_brand) {while($result = $show_brand ->fetch_assoc()){
+                        ?>
+                        <option value="<?php echo $result['brand_id'] ?>"><?php echo $result['brand_name'] ?></option>
+                        <?php 
+                        }}
+                        ?>
                         
                     </select>
                     <label for="" placeholder="">Giá sản phẩm<span style="color: red;" >*</span></label>
@@ -67,7 +75,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
 
 </script>
 
-<script>
+<!-- <script>
     $(document).ready(function(){
         $('#cartegory_id').change(function(){
             //alert($(this).val())
@@ -77,7 +85,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
             })
         })
     })
-</script>
+</script> -->
 
 
 

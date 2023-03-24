@@ -16,6 +16,7 @@
     // Kiểm tra thông tin đăng nhập
     if ($stmt = $con->prepare('SELECT id, password FROM tb_user WHERE username = ?')) {
         $stmt->bind_param('s', $_POST['username']);
+        $hashed_password = md5($password);
         $stmt->execute();
         // Lưu trữ kết quả để kiểm tra xem tài khoản có tồn tại trong cơ sở dữ liệu hay không.
         $stmt->store_result();
@@ -23,6 +24,7 @@
         if ($stmt->num_rows > 0) {
             $stmt->bind_result($id, $password);
             $stmt->fetch();
+            
             if (password_verify($_POST['password'], $password)) {
             
                 if (session_status() == PHP_SESSION_ACTIVE) {

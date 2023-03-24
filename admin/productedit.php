@@ -98,7 +98,7 @@ include "class/product_class.php";
 
 </script>
 
-<script>
+<!-- <script>
     $(document).ready(function(){
         $('#cartegory_id').change(function(){
             //alert($(this).val())
@@ -108,6 +108,6 @@ include "class/product_class.php";
             })
         })
     })
-</script>
+</script> -->
 
 </html>
