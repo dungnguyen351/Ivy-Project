@@ -97,9 +97,6 @@ class product {
                 
             
         }
-
-
-        
         header('location:productlist.php');
         return $result;
     }

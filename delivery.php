@@ -9,73 +9,19 @@
     <title>Ivy-Project</title>
 </head>
 <body>
-    <secsion class="top">
+<secsion class="top">
         <div class="container">
             <div class="row">
                 <div class="top-logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="images/logo.png" alt="">
                     </a>
                 </div>
                 <div class="top-menu-items">
                     <ul>
-                        <li><a href="">ÁO-QUẦN</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li><a href="">Áo</a>
-                                    <ul>
-                                        <li><a href="">Áo len</a></li>
-                                        <li><a href="">Áo thun</a></li>
-                                        <li><a href="">Áo sơmi</a></li>
-                                        <li><a href="">Áo khoác</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Quần</a>
-                                    <ul>
-                                        <li><a href="">Quần jean</a></li>
-                                        <li><a href="">Quần lửng</a></li>
-                                        <li><a href="">Quần kaki</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li><a href="">Đây là website bán chuyên - Mọi thông tin vui lòng liên hệ: 0799982374 </a>
+                            
                         </li>
-                        <li><a href="">TÚI-BALO</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li>
-                                    <a href="">Túi</a>
-                                </li>
-                                <li>
-                                    <a href="">Balo</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">MŨ-NÓN</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li>
-                                    <a href="">Mũ</a>
-                                </li>
-                                <li>
-                                    <a href="">Nón</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">GIÀY-DÉP</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li>
-                                    <a href="">Giày</a>
-                                </li>
-                                <li>
-                                    <a href="">Dép</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">PHỤ KIỆN</a></li>
-                        <li><a href="">TIN TỨC</a></li>
-                        <li><a href="">THÔNG TIN</a></li>
-                    
                     </ul>
                 </div>
                 <div class="top-menu-icons">
@@ -85,10 +31,17 @@
                             <i class="fas fa-search"> </i>
                         </li>
                         <li> 
-                            <a  href="" class="fa fa-user-secret"> </a>
+                            <a class="fa fa-user-secret"> </a>
                         </li>
                         <li> 
-                            <a class="fa fa-shopping-cart"> </a>
+                            <a href="./cart.php" class="fa fa-shopping-cart"></a>
+                        </li>
+                        <li>
+                            <a href="./user/register.html"> ĐĂNG KÝ </a> <br></br> 
+                        </li>
+                        <br></br>
+                        <li>
+                            <a href="./user/login.html"> ĐĂNG NHẬP </a>
                         </li>
                     </ul>
                 </div>
@@ -155,9 +108,9 @@
                             <input type="text">
                     </div>
                     <div class="delivery-content-left-button row">
-                        <a href="cart.html"><span>&#171;</span><p >Quay lại giỏ hàng</p></a>
+                        <a href="cart.php"><span>&#171;</span><p >Quay lại giỏ hàng</p></a>
                         <button >
-                            <a href="payment.html" style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</a>
+                            <a href="payment.php" style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</a>
                         </button>
                     </div>
                 </div>  

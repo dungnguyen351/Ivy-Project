@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatable" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6648d6ecb3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/mainstyle.css">
     <title>Ivy-Project</title>
 </head>
@@ -13,69 +15,15 @@
         <div class="container">
             <div class="row">
                 <div class="top-logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="images/logo.png" alt="">
                     </a>
                 </div>
                 <div class="top-menu-items">
                     <ul>
-                        <li><a href="">ÁO-QUẦN</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li><a href="">Áo</a>
-                                    <ul>
-                                        <li><a href="">Áo len</a></li>
-                                        <li><a href="">Áo thun</a></li>
-                                        <li><a href="">Áo sơmi</a></li>
-                                        <li><a href="">Áo khoác</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Quần</a>
-                                    <ul>
-                                        <li><a href="">Quần jean</a></li>
-                                        <li><a href="">Quần lửng</a></li>
-                                        <li><a href="">Quần kaki</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li><a href="">Đây là website bán chuyên - Mọi thông tin vui lòng liên hệ: 0799982374 </a>
+                            
                         </li>
-                        <li><a href="">TÚI-BALO</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li>
-                                    <a href="">Túi</a>
-                                </li>
-                                <li>
-                                    <a href="">Balo</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">MŨ-NÓN</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li>
-                                    <a href="">Mũ</a>
-                                </li>
-                                <li>
-                                    <a href="">Nón</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">GIÀY-DÉP</a>
-                            <ul class="top-menu-item">
-                                <li><a href="">Hàng mới về</a></li>
-                                <li>
-                                    <a href="">Giày</a>
-                                </li>
-                                <li>
-                                    <a href="">Dép</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">PHỤ KIỆN</a></li>
-                        <li><a href="">TIN TỨC</a></li>
-                        <li><a href="">THÔNG TIN</a></li>
-                    
                     </ul>
                 </div>
                 <div class="top-menu-icons">
@@ -85,13 +33,17 @@
                             <i class="fas fa-search"> </i>
                         </li>
                         <li> 
-                            <a  href="" class="fa fa-user-secret"> </a>
+                            <a class="fa fa-user-secret"> </a>
                         </li>
                         <li> 
-                            <a class="fa fa-shopping-cart"> </a>
+                            <a href="./cart.php" class="fa fa-shopping-cart"></a>
                         </li>
                         <li>
-                            <a href="./user/register.html">ĐĂNG KÝ</a> | <a href="./user/login.html">ĐĂNG NHẬP</a>
+                            <a href="./user/register.html"> ĐĂNG KÝ </a> <br></br> 
+                        </li>
+                        <br></br>
+                        <li>
+                            <a href="./user/login.html"> ĐĂNG NHẬP </a>
                         </li>
                     </ul>
                 </div>
@@ -115,102 +67,61 @@
             <div class="dot"></div>
         </div>
     </section>
+
+    <!-- -------------------------------cartegory----------------------------- -->
     <section class="cartegory">
-        <div class="container">
+        <!-- <div class="container">
             <br>
             <div class="cartegory-top row">
                 <br><p>Trang chủ</p> <span>&#10230;</span> <p>Áo-QUẦN</p> <span>&#10230;</span> <p>Hàng mới về</p>
             </div>
-        </div>
+        </div> -->
         <div class="container">
-            <div class="row">
-                <div class="cartegory-left">
-                    <ul>
-                        <li class="cartegory-left-li"><a href="#">ÁO-QUẦN</a>
-                            <ul>
-                                <li><a href="">HÀNG MỚI VỀ</a></li>
-                            </ul>
-                        </li>
-                        <li class="cartegory-left-li"><a href="#">TÚI-BALO</a>
-                            <ul>
-                                <li><a href="">HÀNG MỚI VỀ</a></li> 
-                            </ul>
-                        </li>
-                        <li class="cartegory-left-li"><a href="">MŨ-NÓN</a></li>
-                        <li class="cartegory-left-li"><a href="">GIÀY-DÉP</a></li>
-                        <li class="cartegory-left-li"><a href="">PHỤ KIỆN</a></li>
-                    </ul>
+            <div class="cartegory-right row">
+                <div class="cartegory-right-top-item">  
+                    <p>LỰA ÁO Ở ĐÂY NÈ !!!</p>
                 </div>
-                <div class="cartegory-right row">
-                    <div class="cartegory-right-top-item">  
-                        <p>HÀNG MỚI VỀ</p>
-                    </div>
-                    <div class="cartegory-right-top-item">
-                        <button><span>Bộ lọc</span><i class="fas fa-sort-down"></i></button>
-                    </div>
-                    <div class="cartegory-right-top-item">
-                        <select name="" id="">
-                            <option value="">Sắp xếp</option>
-                            <option value="">Giá cao đến thấp</option>
-                            <option value="">Giá thấp đến cao</option>
-                        </select>
-                    </div>
+                        <!-- <div class="cartegory-right-top-item">
+                            <select name="" id="">
+                                <option value="">Sắp xếp</option>
+                                <option value="">Giá cao đến thấp</option>
+                                <option value="">Giá thấp đến cao</option>
+                            </select>
+                        </div> -->
+                </div>
                     <div class="cartegory-right-content row">
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE.png" alt="">
-                            <h1>Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__ÁO SWEATER MLB - Basic Mega Logo Overfit Sweatshirts NEW YORK YANKEES - 3AMTB0224-50CRS.png" alt="">
-                            <h1>ÁO SWEATER MLB - Basic Mega Logo Overfit Sweatshirts NEW YORK YANKEES</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® ROCKET ARTWORK PRINTING SWEATSHIRT SKYBLUE.png" alt="">
-                            <h1>Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® ROCKET ARTWORK PRINTING SWEATSHIRT SKYBLUE</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__Áo Sweater Acmé de la vie - ADLV FRONT FULL LOGO KNIT BLACK.png" alt="">
-                            <h1>Áo Sweater Acmé de la vie - ADLV FRONT FULL LOGO KNIT BLACK</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__Áo Sweater Acmé de la vie - ADLV LOGO PATTERN KNIT BEIGE.png" alt="">
-                            <h1>Áo Sweater Áo Sweater Acmé de la vie - ADLV LOGO PATTERN KNIT BEIGE</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images//AnyConv.com__Áo Sweater Acmé de la vie - SCRIPT LOGO STRIPE LONG SLEEVE T- SHIRT BLACK.png" alt="">
-                            <h1>Áo Sweater Acmé de la vie - SCRIPT LOGO STRIPE LONG SLEEVE T- SHIRT BLACK</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__Áo Sweater Acmé de la vie - STRIPE POLO COLLAR KNIT IVORY.png" alt="">
-                            <h1>Áo Sweater Acmé de la vie - STRIPE POLO COLLAR KNIT IVORY</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="images/AnyConv.com__Áo Sweater ADLV - ADLV BABY FACE SWEATSHIRT BLACK HAIR DRYER.png" alt="">
-                            <h1>Áo Sweater ADLV - ADLV BABY FACE SWEATSHIRT BLACK HAIR DRYER</h1>
-                            <p>1.200.000<sup>đ</sup></p>
-                        </div>
+                        <?php
+                            include "class/product_class.php";
+                        ?>
+                        <?php
+                            $product = new product;
+                            $show_product = $product ->show_product();
+                        ?>
+                        <?php
+                        if($show_product){$i=0;
+                            while($result = $show_product->fetch_assoc ()) {$i++;
+                        ?>
+                        <div class ='container-product'  align-content: center;>
+                        <tr>
+                            <a href="product.php"><img src="./images/<?php echo $result['product_img'] ?>" alt="Product Image"></a>
 
-                    <div class="cartegory-right-bottom row">
-                        <div class="cartegory-right-bottom-items">
-                            <p>Hiển thị 2 <span>|</span> 4 sản phẩm</p>
+                            <!-- <img src="./images/<?php echo $result['product_img'] ?>" href=""> -->
+                            <div style= "text-align:center;">
+                            <h1><?php echo $result['product_name'] ?></h1>
+                            <p> Giá: <?php echo $result['product_price'] ?><sup>đ</sup></p>
+                            <a class="btn"href="product_detail.php?product_id=<?php echo $result["product_id"]; ?>">View detail</a>
+                            </div>
+                        </tr>
                         </div>
-                        <div class="cartegory-right-bottom-items">
-                            <p><span>&#171;</span> 1 2 3 4 5 <span>&#187;</span>Trang cuối</p>
-                        </div>
+                        <?php   
+                        }
+                        }
+                        ?>
                     </div>
-                
-
                 </div>
-            </div>
         </div>
     </section>
+
     <!-----------------------------------------------footer--------------------------------------------->
     <section class="footer">
         <div class="footer-container">

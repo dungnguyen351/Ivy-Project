@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,122 +49,88 @@
             </div>
         </div>
     </secsion>
-<!-------------------------------------------------Payment--------------------------------------------->
-    <section class="payment">
+<!-------------------------------------------------CART--------------------------------------------->
+    <section class="cart">
         <div class="container">
-            <div class="payment-top-wrap">
-                <div class="payment-top">
-                    <div class="payment-top-cart payment-top-item">
-                    <i class="fas fa-shopping-cart"></i>
+            <div class="cart-top-wrap">
+                <div class="cart-top">
+                    <div class="cart-top-cart cart-top-item">
+                       <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <div  class="payment-top-adress payment-top-item">
+                    <div class="cart-top-adress cart-top-item">
                         <i class="fas fa-map-marker-alt "></i>
-                    </div>
-                    <div  class="payment-top-payment payment-top-item">
+                     </div>
+                     <div class="cart-top-payment cart-top-item">
                         <i class="fas fa-money-check-alt "></i>
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="payment-content row">
-                <div class="payment-content-left">
-                    <div class="payment-content-left-method-delivery">
-                        <p  style="font-weight: bold;">Phương thức giao hàng</p>
-                        <div class="payment-content-left-method-delivery-item">
-                            <input type="radio"> 
-                            <label for="">Giao hàng chuyển phát nhanh</label>
-                        </div><br>
-                    </div>
-                    <div class="payment-content-left-method-payment">
-                        <p  style="font-weight:bold;">Phương thức thanh toán</p><br>
-                        <p> Mọi giao dịch đều được mã hóa. Thông tin thẻ tín dụng sẽ không báo giờ được lưu lại.</p><br><br>
-
-                        <div class="payment-content-left-method-payment-item">
-                            <input check name="method-payment" type="radio"> 
-                            <label for="">Thanh toán thẻ tín dụng(OnePay)</label>
-                        </div><br>
-
-                        <div class="payment-content-left-method-payment-item-img">
-                            <img src="./images/visa.png" alt="">
-                        </div><br><br>
-
-                        <div class="payment-content-left-method-payment-item">
-                            <input  name="method-payment" type="radio"> 
-                            <label for="">Thanh toán thẻ ATM(OnePay)</label>
-                        </div><br>
-
-                        <div class="payment-content-left-method-payment-item-img">
-                            <img src="./images/visa.png" alt="">
-                        </div><br><br>
-
-                        <div class="payment-content-left-method-payment-item">
-                            <input name="method-payment" type="radio"> 
-                            <label for="">Thanh toán Momo</label>
-                        </div><br>
-
-                        <div class="payment-content-left-method-payment-item-img">
-                            <img src="./images/visa.png" alt="">
-                        </div><br><br>
-
-                        <div class="payment-content-left-method-payment-item">
-                            <input name="method-payment" type="radio"> 
-                            <label for="">Thanh toán khi nhận hàng</label>
-                        </div>
-                        <br>
-                        </br>
-                        <a style="font-size:12px;" href="cart.php"><p >Quay lại giỏ hàng</p></a>
-                    </div>
-                </div>
-                <div class="payment-content-right">
+            <div class="cart-content row">
+                <div class="cart-content-left">
                     <table>
                         <tr>
+                            <th>Sản phẩm</th>
                             <th>Tên sản phẩm</th>
-                            <th>Giảm giá</th>
-                            <th>Số kượng</th>
+                            <th>SL</th>
                             <th>Thành tiền</th>
+                            <th>Xóa</th>
                         </tr>
                         <tr>
-                            <td>Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE</td>
-                            <td>-30%</td>
-                            <td>1</td>
+                            <td><img src="images/AnyConv.com__Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE.png" atl="" ></td>
+                            <td><p>Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE</p></td>
+                            
+                            <td><input type="number" value="1" min="1" ></td>
                             <td><p>1.200.000<sup>đ</sup></p></td>
+                            <td><span>X</span></td>
                         </tr>
                         <tr>
-                            <td>Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE</td>
-                            <td>-30%</td>
-                            <td>1</td>
+                            <td><img src="images/AnyConv.com__Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE.png" atl="" ></td>
+                            <td><p>Áo Sweater Acmé de la vie - ACME DE LA VIE X Smiley® BIKER SMILEY FRONT ARTWORK KNIT BEIGE</p></td>
+                            
+                            <td><input type="number" value="1" min="1" ></td>
                             <td><p>1.200.000<sup>đ</sup></p></td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
-                            <td style="font-weight: bold;"><p>2.400.000<sup>đ</sup></p></td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: bold;" colspan="3">Tạm tính</td>
-                            <td style="font-weight: bold;"><p>40.000<sup>đ</sup></p></td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: bold;" colspan="3">Giao hàng chuyển phát nhanh </td>
-                            <td style="font-weight: bold;"><p>40.000<sup>đ</sup></p></td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: bold;" colspan="3">Tiền thanh toán</td>
-                            <td style="font-weight: bold;"><p>2.440.000<sup>đ</sup></p></td>
+                            <td><span>X</span></td>
                         </tr>
                     </table>
-
-                    <div class="payment-content-right-payment">
-                        <button>Tiếp tục thanh toán</button>
+                </div>
+                <div class="cart-content-right">
+                    <table>
+                        <tr>
+                            <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                        </tr>
+                        <tr>
+                            <td>TỔNG SẢN PHẨM</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>TỔNG TIỀN HÀNG</td>
+                            <td><p>1.200.000<sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>TẠM TÍNH</td>
+                            <td><p style="color:black; font-weight: bold;">1.200.000<sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                    <div class="cart-content-right-button">
+                        <button>
+                            <a href="./index.php">TIẾP TỤC MUA SẮM</a>
+                        </button>
+                        <button>
+                            <a href="./delivery.php">THANH TOÁN</a>
+                        </button>
+                        
                     </div>
-                    
+                    <div class="cart-content-right-dangnhap">
+                        <p>TÀI KHOẢN</p> <br>
+                        <p>Hãy<a href=""> Đăng nhập </a>tài khoản của bạn để tích điểm thành viên</p>
+                    </div>
+
                 </div>
             </div>
-            
         </div>
-
     </section>
-
 
 <!-----------------------------------------------footer--------------------------------------------->
     <section class="footer">
