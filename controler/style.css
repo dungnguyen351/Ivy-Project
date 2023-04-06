@@ -1,0 +1,43 @@
+/* Căn giữa form trên trang */
+.login-form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Font và khoảng cách giữa các thành phần trong form */
+  .login-form h2, .login-form button {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    display:block;
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  /* Tùy chỉnh màu cho button */
+  .login-form button {
+    background-color: #4CAF50; /* Xanh lá cây */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Tương tự và tùy chỉnh hover khi rê chuột vào button*/
+  .login-form button:hover {
+    background-color: #3e8e41;
+  }
+  

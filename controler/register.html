@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register_css.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <!-- Form đăng ký -->
+    <div class="register-form">
+        <h2>Đăng Ký</h2>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="username" class="form-label">Tên đăng nhập:</label>
+                <input type="text" name="username" id="username" class="form-field" placeholder="Nhập tên đăng nhập">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" name="email" id="email" class="form-field" placeholder="Nhập địa chỉ email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu:</label>
+                <input type="password" name="password" id="password" class="form-field" placeholder="Nhập mật khẩu">
+            </div>
+            <div class="form-group">
+                <label for="confirm_password" class="form-label">Nhập lại mật khẩu:</label>
+                <input type="password" name="confirm_password" id="confirm_password" class="form-field" placeholder="Nhập lại mật khẩu">
+            </div>
+            <button type="submit" class="submit-btn">Đăng Ký</button>
+        </form>
+    </div>
+</body>
+</html>
+
